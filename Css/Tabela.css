@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(0,0,0);
+    text-align: center;
+}
+
+/* Menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+/* Tabela do ranking */
+table{
+    border-collapse: collapse;
+    border: 3px solid rgb(255, 0, 0);
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+tbody{
+    font-size: 90%;
+    font-style: italic;
+    letter-spacing: 1px;
+   color: rgb(255, 255, 255);
+}
+
+tr titulo{
+    color: rgb(255, 255, 255);
+}
+
+td{
+    text-align: center;
+    border: 1px solid rgb(255, 0, 0);
+}
+
+
+/* CSS Contato */
+h1{
+    color: rgb(255, 0, 0);
+    text-align: center;
+}
+
+form{
+    font-size: 16px;
+    background: (rgb(255, 0, 0));
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 10px 10px 10px;
+    border-radius: 10px;
+    border: 0px solid; 
+} 
+
+input, textarea{
+     width: 470px;
+     padding: 10px;
+     border-radius: 10px;
+     border: 1px solid;
+}
+
+.enviar input{
+    background-color: #000000;
+    height: 40px;
+    width: 150px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: 1px solid;
+    color: #fff;
+    cursor: pointer;
+}
+
+.enviar input:hover{
+    background-color: #464949;
+}  

@@ -17,6 +17,7 @@
         images.push(img);
     }
 
+    //Função para iniciar o jogo 
     startGame();
 
     function startGame(){
@@ -40,12 +41,18 @@
 
            frontFaces[i].style.background = "url('"+ images[i].src +"')";
            frontFaces[i].setAttribute("id", images[i].id);
+           
        }
 
        modalGameOver.style.zIndex = -2;
        modalGameOver.removeEventListener("click", startGame,false);
+
+      
     }
 
+    
+
+    //Função para classificar as cartas aleatóriamente após reiniciar o jogo
     function randomSort(oldArray){
 
         var newArray = [];
@@ -59,8 +66,12 @@
         }
 
         return newArray;
+         
     }
 
+    
+
+    //Função para virar as cartas
     function flipCard(){
         if(flippedCards.length < 2){
         var faces = this.getElementsByClassName("face");
@@ -104,11 +115,17 @@
     }
     }
 
+    
+    //Fim do jogo
     function gameOver(){
         modalGameOver.style.zIndex = 10;
         modalGameOver.addEventListener("click", startGame, false);
+        
+        // pontuação = 100
+        // pontuar(pontuação)
     }
 
+    //Função para aparecer um img depois que o jogador acertar um par de cartas
     function matchCardSing(){
         imgMatchSign.style.zIndex = 1;
         imgMatchSign.style.top = 150 + "px";
